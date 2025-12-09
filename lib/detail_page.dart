@@ -31,6 +31,17 @@ class _DetailPageState extends State<DetailPage> {
               style: TextStyle(fontSize: 20, color: Color(0xFF3C414F)),
             ),
           ),
+          SizedBox(height: 10),
+          Padding(
+            padding: const EdgeInsets.all(18.0),
+            child: Container(
+              child: Center(
+                child: Image.network(
+                  'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/3.png',
+                ),
+              ),
+            ),
+          ),
         ],
       ),
     );
