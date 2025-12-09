@@ -35,9 +35,13 @@ class _DetailPageState extends State<DetailPage> {
           Padding(
             padding: const EdgeInsets.all(18.0),
             child: Container(
+              height: 450,
+              width: double.infinity,
               child: Center(
                 child: Image.network(
                   'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/3.png',
+                  height: 300,
+                  width: 300,
                 ),
               ),
             ),
