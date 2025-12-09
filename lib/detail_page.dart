@@ -37,6 +37,10 @@ class _DetailPageState extends State<DetailPage> {
             child: Container(
               height: 450,
               width: double.infinity,
+              decoration: BoxDecoration(
+                color: Color(0xFFBCD9D8),
+                borderRadius: BorderRadius.circular(28),
+              ),
               child: Center(
                 child: Image.network(
                   'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/3.png',
