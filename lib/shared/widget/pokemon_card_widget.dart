@@ -36,12 +36,16 @@ class PokemonCardWidget extends StatelessWidget {
             SizedBox(height: 10),
             Text(
               name,
-              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+              style: TextStyle(
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+                color: Color(0xFF223345),
+              ),
             ),
             SizedBox(height: 5),
             Text(
               'Type: $type',
-              style: TextStyle(fontSize: 16, color: Colors.grey[600]),
+              style: TextStyle(fontSize: 16, color: Color(0xFF799693)),
             ),
           ],
         ),
