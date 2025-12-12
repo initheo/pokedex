@@ -40,9 +40,10 @@ class _DetailPageState extends State<DetailPage> {
               ),
               child: Center(
                 child: Image.network(
-                  'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/3.png',
-                  height: 300,
-                  width: 300,
+                  widget.pokemon.imageUrl,
+                  height: 400,
+                  width: 400,
+                  fit: BoxFit.contain,
                 ),
               ),
             ),
