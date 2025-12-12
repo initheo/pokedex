@@ -17,7 +17,7 @@ class _DetailPageState extends State<DetailPage> {
       appBar: AppBar(
         backgroundColor: Color(0xFFF5FBFB),
         title: Text(
-          'Venusaur',
+          widget.pokemon.name,
           style: TextStyle(
             color: Color(0xFF232447),
             fontWeight: FontWeight.bold,
