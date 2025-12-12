@@ -27,12 +27,7 @@ class _DetailPageState extends State<DetailPage> {
       ),
       body: Column(
         children: [
-          Center(
-            child: Text(
-              widget.pokemon.id.toString().padLeft(3, '0'),
-              style: TextStyle(fontSize: 20, color: Color(0xFF3C414F)),
-            ),
-          ),
+          pokemonIdArea(),
           SizedBox(height: 10),
           Padding(
             padding: const EdgeInsets.all(18.0),
@@ -51,6 +46,20 @@ class _DetailPageState extends State<DetailPage> {
                 ),
               ),
             ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget pokemonIdArea() {
+    return SizedBox(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Text(
+            widget.pokemon.id.toString().padLeft(3, '0'),
+            style: TextStyle(fontSize: 20, color: Color(0xFF3C414F)),
           ),
         ],
       ),
