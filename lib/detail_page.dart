@@ -29,7 +29,7 @@ class _DetailPageState extends State<DetailPage> {
         children: [
           Center(
             child: Text(
-              '003',
+              widget.pokemon.id.toString().padLeft(3, '0'),
               style: TextStyle(fontSize: 20, color: Color(0xFF3C414F)),
             ),
           ),
