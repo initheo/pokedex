@@ -108,7 +108,10 @@ class _HomePageState extends State<HomePage> {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => DetailPage()),
+                MaterialPageRoute(
+                  builder: (context) =>
+                      DetailPage(pokemon: dummyPokemonList[index]),
+                ),
               );
             },
             imageUrl: dummyPokemonList[index].imageUrl,
